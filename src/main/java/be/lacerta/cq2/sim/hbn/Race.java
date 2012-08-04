@@ -19,6 +19,15 @@ public class Race extends HbnObject implements java.io.Serializable {
 	int DD;
 	int AD;
 	int ED;
+	int stealage;
+	public int getStealage() {
+		return stealage;
+	}
+
+	public void setStealage(int stealage) {
+		this.stealage = stealage;
+	}
+
 	private Set<Item> items = new TreeSet<Item>();
 	
 	public Race() {
@@ -139,4 +148,20 @@ public class Race extends HbnObject implements java.io.Serializable {
 	public Set<Item> getItems() {
 		return items;
 	}
+	
+	// get creature exponent
+	public double gGetCreatureExponent(int skill) {
+
+	// definitions
+	double[] exponents = {1, 1.1, 1.15, 1.2, 1.28, 1.29, 1.29, 1.3, 1.3, 1.31, 1.31, 1.32};
+	int jumps = 40;
+
+	// calculate exponent
+	int exponent = (int) Math.floor(skill / jumps);
+	if (exponent > 11 || exponent < 0) { exponent = exponents.length - 1; }
+
+	// return
+	return exponents[exponent];
+	}
+	
 }

@@ -32,6 +32,7 @@
         <one-to-one name="userOrbs" class="be.lacerta.cq2.sim.hbn.UserOrbs" cascade="all" />
         <one-to-one name="userImage" class="be.lacerta.cq2.sim.hbn.UserImage" cascade="all" />
         <property name="hideOnline" column="hideOnline" type="boolean"/>
+        <property name="systemUser" column="systemUser" type="boolean"/>
   </class>
   <class name="be.lacerta.cq2.sim.hbn.Topic" table="sim_topic" dynamic-insert="true">
      <meta attribute="extends">HbnObject</meta>
@@ -72,6 +73,7 @@
      <property name="DD" column="DD" type="integer" />
      <property name="AD" column="AD" type="integer" />
      <property name="ED" column="ED" type="integer" />
+     <property name="stealage" column="Stealage" type="integer" />
      <set name="items" lazy="true" inverse="true" order-by="level" cascade="all-delete-orphan">
 	    <key column="raceid" />
 	    <one-to-many class="be.lacerta.cq2.sim.hbn.Item" />
@@ -460,5 +462,12 @@
       <property name="cq2ID" column="cq2ID" type="integer" />
       <property name="name" column="name" type="string" />
       <property name="tokens" column="tokens" type="string" />
-     </class>
+     </class>    
+   <class name="be.lacerta.cq2.sim.hbn.Configuration" table="sim_configuration" dynamic-insert="true">
+     <meta attribute="extends">HbnObject</meta>
+     <id name="key" column="key" type="string">
+            <generator class="assigned" />
+     </id>
+     <property name="value" column="value" type="string" />
+   </class>
 </hibernate-mapping>

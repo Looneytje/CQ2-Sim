@@ -6,6 +6,14 @@ Created by:
 * Lennart Coopmans
 * Robbin Pellegrims
 
+LICENSE
+=======
+"THE WHISKY-WARE LICENSE" (Revision 1):
+Lennart Coopmans and Robbin Pellegrims wrote these files. As long as you
+retain this notice you can do whatever you want with this stuff. If we meet
+some day, and you think this stuff is worth it, you can buy me a whisky in
+return.
+
 INSTALLATION
 =======
 Installation guide for JBoss AS 7.2 and MySQL 5.
@@ -19,7 +27,7 @@ Initialize database
 
 Enable MySQL connector in JBoss.
 --------
-JBoss doesn't not come with the JDBC driver for MySQL.
+JBoss doesn't come with the JDBC driver for MySQL.
 To add it you can follow the guide on https://community.jboss.org/wiki/DataSourceConfigurationInAS7#Installing_a_JDBC_driver_as_a_module
 
 Add Datasource in JBoss.

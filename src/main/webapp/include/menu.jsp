@@ -161,7 +161,7 @@
         <a href="?page=rescheck" title="ResCheck" accesskey="r" class="menu">ResCheck</a><br/>
         <a href="?page=travelcalc" title="TravelCalc" accesskey="t" class="menu">TravelCalc</a><br/>
         <a href="?page=battlecalc" title="BattleCalc" accesskey="b" class="menu">BattleCalc</a><br/>
-        <a href="?page=hatchcalc" title="HatchdamageCalc" accesskey="b" class="menu">HatchdamageCalc</a><br/>
+        <a href="?page=hatchcalc" title="Wave damage Calc" accesskey="b" class="menu">Wave damage Calc</a><br/>
         <a href="?page=powerspell" title="Powerspell" accesskey="p" class="menu">Powerspells</a><br/>
         <a href="?page=support" title="Support" accesskey="s" class="menu"><b>Support</b></a><br/>
         <a href="?page=shard" title="Shard support" class="menu">Shard support</a><br/>

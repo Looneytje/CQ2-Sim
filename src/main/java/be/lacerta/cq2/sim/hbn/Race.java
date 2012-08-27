@@ -20,6 +20,25 @@ public class Race extends HbnObject implements java.io.Serializable {
 	int AD;
 	int ED;
 	int stealage;
+	int stealage2;
+	int stealage3;
+	
+	public int getStealage2() {
+		return stealage2;
+	}
+
+	public void setStealage2(int stealage2) {
+		this.stealage2 = stealage2;
+	}
+
+	public int getStealage3() {
+		return stealage3;
+	}
+
+	public void setStealage3(int stealage3) {
+		this.stealage3 = stealage3;
+	}
+
 	public int getStealage() {
 		return stealage;
 	}

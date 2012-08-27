@@ -74,6 +74,8 @@
      <property name="AD" column="AD" type="integer" />
      <property name="ED" column="ED" type="integer" />
      <property name="stealage" column="Stealage" type="integer" />
+     <property name="stealage2" column="Stealage2" type="integer" />
+     <property name="stealage3" column="Stealage3" type="integer" />
      <set name="items" lazy="true" inverse="true" order-by="level" cascade="all-delete-orphan">
 	    <key column="raceid" />
 	    <one-to-many class="be.lacerta.cq2.sim.hbn.Item" />

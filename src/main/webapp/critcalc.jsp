@@ -86,7 +86,7 @@
 			<table width="100%">
 				<tr>
 					<td class="titleline" width="100%"><font class="head"
-						size="-1">Creature level calculator</font></td>
+						size="-1">Max usage level calculator</font></td>
 				</tr>
 			</table>
 
